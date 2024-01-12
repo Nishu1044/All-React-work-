@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="parent"></div> 
+</body>
+</html>
+
+<script src="https://www.unpkg.com/react@18.2.0/umd/react.development.js"></script>
+    <script src="https://www.unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+    <script type="text/babel">
+    
+    let Parent = React.createElement( "div",{id: "first",style: { border: "1px solid black", height: "120px",width:"800px",display:"flex" ,justifyContent: "space-evenly",marginTop:"210px",marginLeft:"250px",backgroundColor:"antiquewhite"},},"Parent",
+  React.createElement("div", { id: "child1", style: { border: "1px solid black", height: "80px", width: "80px",backgroundColor:"Red" ,marginTop:"17.5px"},},"Child1"),
+  React.createElement("div", { id: "child2", style: { border: "1px solid black", height: "80px", width: "80px",backgroundColor:"Yellow",marginTop:"17.5px" } },"Child2"),
+  React.createElement("div", { id: "child2", style: { border: "1px solid black", height: "80px", width: "80px",backgroundColor:"green",marginTop:"17.5px" } },"Child3"),
+  React.createElement("div", { id: "child2", style: { border: "1px solid black", height: "80px", width: "80px",backgroundColor:"Purple",marginTop:"17.5px" } },"Child4")
+
+);
+
+let disp = ReactDOM.createRoot(document.getElementById("parent"));
+disp.render(Parent);
+
+</script>
